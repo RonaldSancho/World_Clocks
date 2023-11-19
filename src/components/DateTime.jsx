@@ -24,7 +24,7 @@ function DateTime(){
     return (
         <div>
             <p>Fecha: {dateTime[0].date}</p>
-            <p>Fecha: {dateTime[1].time}</p>
+            <p>Hora: {dateTime[1].time}</p>
         </div>
     );
 }

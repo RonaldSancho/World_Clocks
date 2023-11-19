@@ -1,14 +1,14 @@
 import axios from "axios";
 
-const apiURl = "https://www.timeapi.io/api/Time/current/zone?timeZone=America/Costa_Rica";
+const apiURl = "http://worldtimeapi.org/api/timezone/America/Costa_Rica";
 
 async function DataTime(){
     try{
         const reponse = await axios.get(apiURl);
         const dataTime = reponse.data;
     
-        const date = dataTime.date;
-        const time = dataTime.time;
+        const date = dataTime.datetime.split('T')[0];
+        const time = dataTime.datetime.split('T')[1].slice(0,8);
 
         const arrayDateTime = [
             {date: date},
