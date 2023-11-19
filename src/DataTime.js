@@ -14,9 +14,9 @@ async function DataTime(){
             {date: date},
             {time: time}
         ];
-        console.log('Datos guardados', arrayDateTime)
+        return arrayDateTime;
     } catch (error){
-        console.error('Datos guardados')
+        console.error('Error al obtener los datos')
     }
 }
 
