@@ -95,5 +95,6 @@ dd dl .term {
   .dictionary > .term {
     width: 100%; /* Ajusta el ancho para que ocupe toda la pantalla */
     max-width: none; /* Elimina la restricción de max-width */
+    line-height: 1.666;
   }
 }
