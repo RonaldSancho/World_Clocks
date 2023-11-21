@@ -86,15 +86,20 @@ dd dl .term {
   margin-bottom: 1rem;
 }
 
-/* Media Query para pantallas más pequeñas, ajusta según tus necesidades */
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 300%;
+  }
+
+  .dictionary {
+    justify-content: center; /* Centra las tarjetas en la pantalla */
   }
 
   .dictionary > .term {
     width: 100%; /* Ajusta el ancho para que ocupe toda la pantalla */
     max-width: none; /* Elimina la restricción de max-width */
     line-height: 1.666;
+    margin-left: auto; /* Añade márgenes automáticos a los lados */
+    margin-right: auto;
   }
 }
