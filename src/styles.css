@@ -37,18 +37,19 @@ h1 span {
 }
 
 dt {
+  padding-top: 10px;
   color: #2ec2b0;
   line-height: 1;
 }
 
 dt span {
-  font-size: 200%;
+  font-size: 160%;
   font-weight: 900;
   white-space: nowrap; /* Evitar que el texto se desborde en pantallas pequeñas */
 }
 
 dd {
-  font-size: 92.5%;
+  font-size: 93%;
   margin-left: 0;
 }
 
@@ -64,10 +65,6 @@ dd dl {
   margin: 1rem auto 0 auto;
   letter-spacing: 0.33px;
   max-width: 15rem;
-}
-
-dd dl .term {
-  margin-bottom: 1rem;
 }
 
 @media (min-width: 1200px) {
