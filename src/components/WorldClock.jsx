@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import DataTime from "../DataTime";
 import CreateCard from "./CreateCard";
 
-function DateTime(){
+function WorldClock(){
 
     const [dateTime, setDateTime] = useState(null);
 
@@ -28,7 +28,7 @@ function DateTime(){
         return <div>Error</div>;
     }
 
-    return <
+    return <CreateCard data={dateTime} />
 }
 
-export default DateTime;
+export default WorldClock;
