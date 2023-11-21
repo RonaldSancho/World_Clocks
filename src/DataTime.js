@@ -12,7 +12,7 @@ const locations = [
 async function DataTime(){
     try{
         const responses = await Promise.all(locations.map(async (location) => {
-            const apiURL = `http://worldtimeapi.org/api/timezone/${location}`;
+            const apiURL = `https://worldtimeapi.org/api/timezone/${location}`;
             const reponse = await axios.get(apiURL);
             return reponse.data;
         }));
