@@ -1,9 +1,9 @@
+import React from "react"
 
-        
-        
-        
+function CreateCard({data}){
+    return(
         <dl className="dictionary">
-            {dateTime.map((data, index) => (
+            {data.map((data, index) => (
                 <div className="term" key={index}>
                     <dt>
                         <span>
@@ -17,3 +17,7 @@
                 </div>
             ))}
         </dl> 
+    )
+}
+
+export default CreateCard;

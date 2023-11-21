@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import DataTime from "../DataTime";
+import CreateCard from "./CreateCard";
 
 function DateTime(){
 
@@ -26,6 +27,8 @@ function DateTime(){
     if(!dateTime){
         return <div>Error</div>;
     }
+
+    return <
 }
 
 export default DateTime;
