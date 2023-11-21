@@ -1,15 +1,12 @@
 import axios from "axios";
-import { response } from "express";
 
 const locations = [
     "America/Costa_Rica",
     "America/New_York",
-    "Asia/Shangai",
+    "Asia/Shanghai",
     "Asia/Kolkata",
     "Europe/Berlin",
     "Asia/Tokyo"
-
-
 ]
 
 async function DataTime(){

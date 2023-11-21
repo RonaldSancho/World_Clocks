@@ -11,33 +11,39 @@ function DateTime(){
                 const result = await DataTime();
                 setDateTime(result);
             } catch (error){
-                console.error('Error')
+                console.error('Error', error)
             }
         }
-        fetchData();
+        const interval = setInterval(fetchData, 1000)
 
-        const interval = setInterval(fetchData,1000)
-        return () => clearInterval(interval)
 
+        return () => {
+            clearInterval(interval);
+            fetchData();
+        };
     }, []);
     
     if(!dateTime){
         return <div>Error</div>;
     }
 
+    console.log('Data', dateTime);
+
     return (
         <dl className="dictionary">
-            <div className="term">
-                <dt>
-                    <span>
-                    <p>Zone: {dateTime[0].timezone}</p>
-                    </span>
-                </dt>
-                <dd>
-                    <p>Date: {dateTime[0].date}</p>
-                    <p>Time: {dateTime[0].time}</p>
-                </dd>
-            </div>
+            {dateTime.map((data, index) => (
+                <div className="term" key={index}>
+                    <dt>
+                        <span>
+                            <p>Zone: {data.zone}</p>
+                        </span>
+                    </dt>
+                    <dd>
+                        <p>Date: {data.date}</p>
+                        <p>Time: {data.time}</p>
+                    </dd>
+                </div>
+            ))}
         </dl>
     );
 }
