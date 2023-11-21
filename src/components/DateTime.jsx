@@ -29,6 +29,7 @@ function DateTime(){
         <div>
             <p>Fecha: {dateTime[0].date}</p>
             <p>Hora: {dateTime[1].time}</p>
+            <p>Lugar: {dateTime[2].timezone}</p>
         </div>
     );
 }

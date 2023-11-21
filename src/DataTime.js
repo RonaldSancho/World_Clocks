@@ -9,10 +9,12 @@ async function DataTime(){
     
         const date = dataTime.datetime.split('T')[0];
         const time = dataTime.datetime.split('T')[1].slice(0,8);
+        const zone = dataTime.timezone;
 
         const arrayDateTime = [
             {date: date},
-            {time: time}
+            {time: time},
+            {timezone: zone}
         ];
         return arrayDateTime;
     } catch (error){
