@@ -35,7 +35,7 @@ h1 span {
     background-color: #fff;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
     .term {
         flex-basis: calc(33.3333% - 20px);
     }
