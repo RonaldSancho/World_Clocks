@@ -7,7 +7,7 @@ function CreateCard({data}){
                 <div className="term" key={index}>
                     <dt>
                         <span>
-                            <p>Zone: {data.zone}</p>
+                            Zone: {data.zone}
                         </span>
                     </dt>
                     <dd>

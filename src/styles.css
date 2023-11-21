@@ -28,9 +28,17 @@ h1 span {
   max-width: 90%;
 }
 
+.dictionary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 4rem auto;
+  max-width: 90%;
+}
+
 .dictionary > .term {
   text-align: center;
-  max-width: 20rem;
+  width: calc(33.3333% - 20px); /* Ajusta el tamaño de las tarjetas según el diseño deseado */
   margin-bottom: 3rem;
   padding: 2rem;
   border-radius: 3px;
@@ -41,6 +49,7 @@ h1 span {
 
 .dictionary > .term > dt {
   margin-bottom: 1rem;
+  overflow: hidden; /* Evitar que el dt span se salga del card */
 }
 
 dt {
@@ -49,13 +58,13 @@ dt {
 }
 
 dt span {
-  font-size: 120%;
-  font-weight: 800;
+  font-size: 200%;
+  font-weight: 900;
+  white-space: nowrap; /* Evitar que el texto se desborde en pantallas pequeñas */
 }
 
 dd {
-  font-size: 100%;
-  font-weight: 800;
+  font-size: 92.5%;
   margin-left: 0;
 }
 
@@ -75,4 +84,16 @@ dd dl {
 
 dd dl .term {
   margin-bottom: 1rem;
+}
+
+/* Media Query para pantallas más pequeñas, ajusta según tus necesidades */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 300%;
+  }
+
+  .dictionary > .term {
+    width: 100%; /* Ajusta el ancho para que ocupe toda la pantalla */
+    max-width: none; /* Elimina la restricción de max-width */
+  }
 }
