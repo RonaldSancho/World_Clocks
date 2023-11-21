@@ -24,82 +24,25 @@ h1 span {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 4rem auto;
-  max-width: 90%;
 }
 
-.dictionary {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 4rem auto;
-  max-width: 90%;
-}
-
-.dictionary > .term {
-  text-align: center;
-  width: calc(33.3333% - 20px); /* Ajusta el tamaño de las tarjetas según el diseño deseado */
-  margin-bottom: 3rem;
-  padding: 2rem;
-  border-radius: 3px;
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), 0 5px 20px rgba(0, 0, 0, 0.1);
+.term {
+  flex-basis: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
   background-color: #fff;
-  transition: all 100ms ease-in-out;
 }
 
-.dictionary > .term > dt {
-  margin-bottom: 1rem;
-  overflow: hidden; /* Evitar que el dt span se salga del card */
-}
-
-dt {
-  color: #2ec2b0;
-  line-height: 1;
-}
-
-dt span {
-  font-size: 200%;
-  font-weight: 900;
-  white-space: nowrap; /* Evitar que el texto se desborde en pantallas pequeñas */
-}
-
-dd {
-  font-size: 92.5%;
-  margin-left: 0;
-}
-
-dd dt {
-  margin-top: 1rem;
-  margin-bottom: 0.25rem;
-  font-weight: 600;
-  font-size: inherit;
-}
-
-dd dl {
-  font-size: 90%;
-  margin: 1rem auto 0 auto;
-  letter-spacing: 0.33px;
-  max-width: 15rem;
-}
-
-dd dl .term {
-  margin-bottom: 1rem;
-}
-
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 300%;
+@media (min-width: 600px) {
+  .term {
+      flex-basis: calc(50% - 20px);
   }
+}
 
-  .dictionary {
-    justify-content: center; /* Centra las tarjetas en la pantalla */
-  }
-
-  .dictionary > .term {
-    width: 100%; /* Ajusta el ancho para que ocupe toda la pantalla */
-    max-width: none; /* Elimina la restricción de max-width */
-    line-height: 1.666;
-    margin-left: auto; /* Añade márgenes automáticos a los lados */
-    margin-right: auto;
+@media (min-width: 900px) {
+  .term {
+      flex-basis: calc(33.3333% - 20px);
   }
 }
