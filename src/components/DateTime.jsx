@@ -26,11 +26,19 @@ function DateTime(){
     }
 
     return (
-        <div>
-            <p>Fecha: {dateTime[0].date}</p>
-            <p>Hora: {dateTime[1].time}</p>
-            <p>Lugar: {dateTime[2].timezone}</p>
-        </div>
+        <dl className="dictionary">
+            <div className="term">
+                <dt>
+                    <span>
+                    <p>Zone: {dateTime[0].timezone}</p>
+                    </span>
+                </dt>
+                <dd>
+                    <p>Date: {dateTime[0].date}</p>
+                    <p>Time: {dateTime[0].time}</p>
+                </dd>
+            </div>
+        </dl>
     );
 }
 

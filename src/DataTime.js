@@ -12,9 +12,9 @@ async function DataTime(){
         const zone = dataTime.timezone;
 
         const arrayDateTime = [
-            {date: date},
-            {time: time},
-            {timezone: zone}
+            {date: date,
+            time: time,
+            timezone: zone}
         ];
         return arrayDateTime;
     } catch (error){

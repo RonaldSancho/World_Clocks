@@ -49,18 +49,13 @@ dt {
 }
 
 dt span {
-  font-size: 200%;
-  font-weight: 900;
-}
-
-.emoji {
-  margin: 0 auto 20px;
-  display: block;
-  font-size: 400%;
+  font-size: 120%;
+  font-weight: 800;
 }
 
 dd {
-  font-size: 92.5%;
+  font-size: 100%;
+  font-weight: 800;
   margin-left: 0;
 }
 
