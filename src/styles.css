@@ -2,14 +2,14 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  background: black;
-  color: #333;
+  background: #0c1b2b;
+  color: #ffffff;
   margin: 0;
 }
 
 h1 {
   font-weight: 900;
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-align: center;
   margin-top: 4rem;
   color: #2ec2b0;
@@ -19,7 +19,7 @@ h1 {
 h1 span {
   display: inline-block;
   padding: 8px 20px;
-  background: #2ec2b0;
+  background: #3ba0ff;
   color: #fff;
   border-radius: 5px;
 }
@@ -35,20 +35,21 @@ h1 span {
   flex-basis: calc(33.3333% - 20px);
   margin: 20px 10px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
-  background-color: #fff;
-  transition: transform 0.3s ease-in-out;
+  background-color: #1f364b;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .term:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), 0 0 8px rgba(58, 143, 255, 1);
 }
 
 dt {
   padding-top: 10px;
-  color: #2ec2b0;
+  color: #3ba0ff;
   line-height: 1.2;
 }
 
@@ -60,6 +61,11 @@ dt span {
 dd {
   font-size: 1rem;
   margin: 0;
+}
+
+dd p {
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 @media (max-width: 767px) {
