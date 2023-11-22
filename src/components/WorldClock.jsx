@@ -25,7 +25,7 @@ function WorldClock(){
     }, []);
     
     if(!dateTime){
-        return <div>Cargando</div>;
+        return <div className="loading">Loading...</div>;
     }
 
     return <CreateCard data={dateTime} />
