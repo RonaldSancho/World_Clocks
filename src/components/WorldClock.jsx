@@ -17,7 +17,6 @@ function WorldClock(){
         }
         const interval = setInterval(fetchData, 1000)
 
-
         return () => {
             clearInterval(interval);
             fetchData();
