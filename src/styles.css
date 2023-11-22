@@ -1,75 +1,69 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  line-height: 1.666;
-  background: #c0d2d4;
-  color: #555;
+  line-height: 1.6;
+  background: black;
+  color: #333;
+  margin: 0;
 }
 
 h1 {
   font-weight: 900;
-  font-size: 500%;
+  font-size: 3.5rem;
   text-align: center;
   margin-top: 4rem;
-  color: #fff;
+  color: #2ec2b0;
   line-height: 1.2;
 }
 
 h1 span {
-  padding: 5px 15px;
+  display: inline-block;
+  padding: 8px 20px;
   background: #2ec2b0;
+  color: #fff;
+  border-radius: 5px;
 }
 
 .dictionary {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
 }
 
 .term {
-  flex-basis: 80%;
-  margin: 10px auto;
+  flex-basis: calc(33.3333% - 20px);
+  margin: 20px 10px;
   padding: 20px;
-  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
   background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.term:hover {
+  transform: scale(1.05);
 }
 
 dt {
   padding-top: 10px;
   color: #2ec2b0;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 dt span {
-  font-size: 160%;
-  font-weight: 900;
-  white-space: nowrap; /* Evitar que el texto se desborde en pantallas pequeñas */
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 dd {
-  font-size: 93%;
-  margin-left: 0;
+  font-size: 1rem;
+  margin: 0;
 }
 
-dd dt {
-  margin-top: 1rem;
-  margin-bottom: 0.25rem;
-  font-weight: 600;
-  font-size: inherit;
-}
-
-dd dl {
-  font-size: 90%;
-  margin: 1rem auto 0 auto;
-  letter-spacing: 0.33px;
-  max-width: 15rem;
-}
-
-@media (min-width: 1200px) {
-    .term {
-        flex-basis: calc(33.3333% - 20px);
-    }
+@media (max-width: 767px) {
+  .term {
+    flex-basis: calc(100% - 20px);
+  }
 }
