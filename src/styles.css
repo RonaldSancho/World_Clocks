@@ -28,12 +28,13 @@ h1 span {
 }
 
 .term {
-    flex-basis: 100%;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: #fff;
+  flex-basis: 80%;
+  margin: 10px auto;
+  padding: 20px;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
 }
 
 dt {
