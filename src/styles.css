@@ -76,9 +76,8 @@ dd p {
   text-align: center;
   padding: 20px;
   margin-top: 2rem;
-  background-color: #081b29;
+  background-color: #0c1b2b;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   animation: pulse 1.5s infinite;
 }
 
